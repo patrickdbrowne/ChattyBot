@@ -1,0 +1,211 @@
+version: "3.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+  
+- intent: find_time_zone
+  examples: |
+    - what is the time?
+    - can you tell me the time?
+    - can you tell the time?
+    - could you tell me the time?
+    - can you find a timezone?
+    - what time is it?
+    - tell me the time zone
+
+- intent: find_time_zone_for_location
+  examples: |
+    - what is the time zone of [London](city)?
+    - time zone of [Lisbon](city)
+    - do you know the time zone of [Berlin](city)?
+    - i need to know the time zone of [Mumbai](city)
+    - What is the time in [Prague](city)
+    - What time zone is [Sydney](city) in?
+    - what time would it be in [San Fransisco](city)
+    - [Perth](city) time
+    - time in [Paris](city)
+    - what time is it in [Melbourne](city)?
+    - do you know the time in [Tokyo](city)?
+    - what's the time in [Ukraine](city)
+
+- intent: thanks
+  examples: |
+    - Thank you!!
+    - thanks
+    - great, thanks
+    - thank you
+    - thx
+
+- intent: find_weather
+  examples: |
+    - what is the weather like?
+    - can you tell me the weather?
+    - what's the weather
+    - weather
+    - how's the weather?
+    - is it hot?
+    - is it cold?
+    - is it raining?
+
+- intent: find_weather_for_location
+  examples: |
+    - what is the weather like in [Sydney](city)?
+    - weather in [Melbourne](city)
+    - how's the weather in [Paris](city)?
+    - can you tell me the weather in [Prague](city)?
+    - what is [Manchester](city) weather like?
+    - is it raining in [London](city)?
+    - how hot is it in [Moscow](city)?
+    - how cold is it in [Dubai](city)?
+    - what is the weather in [America](city)
+
+- intent: define_word_sentence
+  examples: |
+    - define "[analysis](define_word)"
+    - what does "[approach](define_word)" mean?
+    - what is the meaning of "[context](define_word)"?
+    - please define "[economy](define_word)"
+    - definition of "[agnostic](define_word)"
+    - can you give the definition of "[auspicious](define_word)" please
+    - "[fruition](define_word)"
+    - what is a "[banana](define_word)"
+    - what's the definition of "[inculpable](define_word)"
+
+- intent: find_country_info
+  examples: |
+    - tell me about [Djibouti](city)
+    - what goes on in [Chile](city)
+    - What is [Australia](city) like?
+    - about [Brazil](city)
+    - can you tell me a bit about [India](city)?
+    - what's [Egypt](city) like?
+    - what's happening in [Papua new guinea](city)?
+    - how is [australia](city) like?
+    - can I have information about [Nigeria](city)?
+    - What is [Argentina](city)'s population?
+    - What is [Italy](city)'s currency?
+    - what is [korea](city)'s official name?
+    - how many people live [India](city)?
+    - what continent is [Egypt](city) in?
+    - what's the demonym for the people of [France](city)?
+    - what language is spoken in [Ethiopia](city)?
+    - what's the capital of [Poland](city)?
+    - what area is [Australia](city) in?
+
+- intent: challenge_bot
+  examples: |
+    - Are you a bot?
+    - who made you?
+    - ChattyBot
+    - are you real?
+    - are you powered by google?
+    - github
+    - acknowledgements
+    - who are you?
+
+- intent: meaning_of_life
+  examples: |
+    - what's the meaning of life?
+    - what is the meaning of life?
+    - what is life?
+
+- intent: find_covid_data
+  examples: |
+    - how many cases are there?
+    - how many people have recovered?
+    - how many cases are there in [Australia](city)?
+    - how many people have recovered from corona in [Korea](city)?
+    - how many people have died from covid in [Canada](city)?
+    - total number of cases in [Russia](city)?
+    - total number of cases
+    - COVID-19 in [Italy](city)
+    - how many people have died from COVID-19?
+    - covid
+    - corona
+    - COVID
+    - coronavirus
+    - rona
+    - how many people have covid in [United States](city)?
+
+- intent: find_joke
+  examples: |
+    - tell me a joke
+    - tell me something funny
+    - what's a good joke?
+    - can I hear a joke?
+    - joke
+    - funny
+    - what's a humourous joke
+  
+- intent: find_trivia
+  examples: | 
+    - trivia
+    - give me a question
+    - random question
+    - trivia night
+    - can you give me trivia?
+
+- intent: user_trivia_response
+  examples: |
+    - [A](user_trivia_response)
+    - [B](user_trivia_response)
+    - [C](user_trivia_response)
+    - [D](user_trivia_response)
+    - [a](user_trivia_response)
+    - [b](user_trivia_response)
+    - [c](user_trivia_response)
+    - [d](user_trivia_response)
+  
+- intent: music_artist_link
+  examples: |
+    - [https://open.spotify.com/artist/0k17h0D3J5VfsdmQ1iZtE9?si=SHZTrr_oS--JM1ptNmErCA](artist)
+    - artist link: [https://open.spotify.com/artist/74ASZWbe4lXaubB36ztrGX?si=Yehp9FHVROS2BF4fPZwQBQ](artist)
+    - link [https://open.spotify.com/artist/2DaxqgrOhkeH0fpeiQq2f4?si=1MeHEgGvSZmP1G7q6A_Xqg](artist)
+    - spotify [https://open.spotify.com/artist/22bE4uQ6baNwSHPVcDxLCe?si=EHLw-5n8TcSwXwM8Zp9tTQ](artist)
+  
+- intent: search_music
+  examples: |
+    - play [time](song)
+    - play [Echoes](song)
+    - play [I'm not in love](song)
+    - play [cocaine](song)
+    - play [Wind Of Change](song)
+    - play [Tranz](song)
+    - play [The Chain](song)
+    - play [Message Man](song)
+    - play [Lane Boy](song)
+    - play [Hey Jude](song)
+    - play [Angie](song)
+    - play [Believe Me](song)
+    - Play [Pigs (three different ones)](song)
+    - can you play [Hurricane](song)?
+    - search for [Don't Look Back in Anger - Remastered](song)
+    - search [Stand by Me](song)
+    - music [Stop Crying your Heart Out](song)

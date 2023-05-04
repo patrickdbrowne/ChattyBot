@@ -1,0 +1,18 @@
+1. open two cmd terminals
+2. go to "ChattyBot" directory in both
+3. type "conda activate env" in both
+4. in one, type "rasa run actions" for the server actions (runs python code)
+5. in the other, type "rasa shell"
+6. once you've finished, close the shells and type "conda deactivate"
+
+If rasa shell doesn't work, there's probably a typo or something of the likes in domain.
+
+Before running main.py for Tkinter:
+- "Rasa run actions"
+- "Rasa run --enable-api"
+- main.py
+
+
+===========NEW-VERSION==============
+Create a virtual environment with all the requirements
+run "main.py" in the virtual environnment in the "ChattyBot" directory

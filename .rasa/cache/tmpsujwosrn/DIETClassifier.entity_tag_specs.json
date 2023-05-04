@@ -1,0 +1,52 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-artist",
+      "2": "I-artist",
+      "3": "L-artist",
+      "4": "U-artist",
+      "5": "B-city",
+      "6": "I-city",
+      "7": "L-city",
+      "8": "U-city",
+      "9": "B-define_word",
+      "10": "I-define_word",
+      "11": "L-define_word",
+      "12": "U-define_word",
+      "13": "B-song",
+      "14": "I-song",
+      "15": "L-song",
+      "16": "U-song",
+      "17": "B-user_trivia_response",
+      "18": "I-user_trivia_response",
+      "19": "L-user_trivia_response",
+      "20": "U-user_trivia_response",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-artist": 1,
+      "I-artist": 2,
+      "L-artist": 3,
+      "U-artist": 4,
+      "B-city": 5,
+      "I-city": 6,
+      "L-city": 7,
+      "U-city": 8,
+      "B-define_word": 9,
+      "I-define_word": 10,
+      "L-define_word": 11,
+      "U-define_word": 12,
+      "B-song": 13,
+      "I-song": 14,
+      "L-song": 15,
+      "U-song": 16,
+      "B-user_trivia_response": 17,
+      "I-user_trivia_response": 18,
+      "L-user_trivia_response": 19,
+      "U-user_trivia_response": 20,
+      "O": 0
+    },
+    "num_tags": 21
+  }
+]

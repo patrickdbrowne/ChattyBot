@@ -1,0 +1,93 @@
+#### This file contains tests to evaluate that your bot behaves as expected.
+#### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+
+#### For action, check IF QUOTATIONS ARE ALLOWED
+#### This file have sentences that access each possible type of response from the bot
+stories:
+- story: asking for time - long
+  steps:
+  - user: |
+      hello there!
+    intent: greet
+  - action: utter_greet
+  - user: |
+      amazing
+    intent: mood_great
+  - action: utter_happy
+
+#### Replace Asia with a value from not_city in actions.py
+- story: Finding the weather in a valid country (not specific)
+  steps:
+  - user: |
+      what is the weather like in Asia
+    intent: find_weather_for_location
+  - action: utter_finding_weather
+  - action: action_show_weather
+
+#### Make sure city value is not in not_city array i.e., CANNOT be america, asia, africa, ...
+- story: Finding the weather of a valid city (specific)
+  steps:
+  - user: |
+      is it hot in [Djibouti](city)
+    intent: find_weather_for_location
+  - action: utter_finding_weather
+  - action: action_show_weather
+
+#### Aimed for user entering typos
+- story: Cannot find weather of invalid location
+  steps:
+  - user: |
+      is it cold in Dibouti
+    intent: find_weather_for_location
+  - action: "Sorry! Looks like I can't find the time in Dibouti. Want to try again?"
+
+#### If user doesn't specify location of weather
+- story: Finding weather if location isn't specified (by IP address)
+  steps:
+  - user: |
+      how's the weather?
+    intent: find_weather_for_location
+  - action: utter_finding_weather
+  - action: action_show_weather
+
+#### Again, replace America with a value from not_city in actions.py
+- story: Finding the time when a country/continent is provided (not specific)
+  steps:
+  - user: |
+      what time zone is America in?
+    intent: find_time_zone_for_location
+  - action: utter_finding_time_zone
+  - action: action_show_time_zone
+
+- story: Finding the time without location being given initially
+  steps:
+  - user: |
+      what is the time?
+    intent: find_time_zone
+  - action: utter_ask_location
+  - user: |
+      [sydney](city)
+    intent: city_info
+  - action: utter_finding_time_zone
+  - action: action_show_time_zone
+
+#### Make sure city value is not in not_city array i.e., CANNOT be america, asia, africa, ...
+- story: Finding the time with a given location (specific)
+  steps:
+  - user: |
+      what time would it be in [Prague](city)
+    intent: find_time_zone_for_location
+  - action: utter_ask_location
+  - user: |
+      [sydney](city)
+    intent: city_info
+  - action: utter_finding_time_zone
+  - action: action_show_time_zone
+
+#### For typos
+- story: Finding the time with a given location that's not valid
+  steps:
+  - user: |
+      what time is Syney in?
+    intent: find_time_zone_for_location
+  - action: "Sorry! Looks like I can't find the time in Syney. Want to try again?"

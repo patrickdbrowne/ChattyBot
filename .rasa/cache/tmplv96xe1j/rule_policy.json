@@ -1,0 +1,42 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"city_info\"}}]": "utter_finding_time_zone",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"city_info\"}}, {\"prev_action\": {\"action_name\": \"utter_finding_time_zone\"}, \"user\": {\"intent\": \"city_info\"}}]": "action_show_time_zone",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"city_info\"}}, {\"prev_action\": {\"action_name\": \"utter_finding_time_zone\"}, \"user\": {\"intent\": \"city_info\"}}, {\"prev_action\": {\"action_name\": \"action_show_time_zone\"}, \"user\": {\"intent\": \"city_info\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"challenge_bot\"}}]": "utter_challenge_bot",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"challenge_bot\"}}, {\"prev_action\": {\"action_name\": \"utter_challenge_bot\"}, \"user\": {\"intent\": \"challenge_bot\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"find_weather_for_location\"}}]": "utter_finding_weather",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"find_weather_for_location\"}}, {\"prev_action\": {\"action_name\": \"utter_finding_weather\"}, \"user\": {\"intent\": \"find_weather_for_location\"}}]": "action_show_weather",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"find_weather_for_location\"}}, {\"prev_action\": {\"action_name\": \"utter_finding_weather\"}, \"user\": {\"intent\": \"find_weather_for_location\"}}, {\"prev_action\": {\"action_name\": \"action_show_weather\"}, \"user\": {\"intent\": \"find_weather_for_location\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"find_weather\"}}]": "utter_finding_weather",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"find_weather\"}}, {\"prev_action\": {\"action_name\": \"utter_finding_weather\"}, \"user\": {\"intent\": \"find_weather\"}}]": "action_show_weather",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"find_weather\"}}, {\"prev_action\": {\"action_name\": \"utter_finding_weather\"}, \"user\": {\"intent\": \"find_weather\"}}, {\"prev_action\": {\"action_name\": \"action_show_weather\"}, \"user\": {\"intent\": \"find_weather\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"meaning_of_life\"}}]": "utter_meaning_of_life",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"meaning_of_life\"}}, {\"prev_action\": {\"action_name\": \"utter_meaning_of_life\"}, \"user\": {\"intent\": \"meaning_of_life\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"find_country_info\"}}]": "utter_finding_country_info",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"find_country_info\"}}, {\"prev_action\": {\"action_name\": \"utter_finding_country_info\"}, \"user\": {\"intent\": \"find_country_info\"}}]": "action_find_country_info",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"find_country_info\"}}, {\"prev_action\": {\"action_name\": \"utter_finding_country_info\"}, \"user\": {\"intent\": \"find_country_info\"}}, {\"prev_action\": {\"action_name\": \"action_find_country_info\"}, \"user\": {\"intent\": \"find_country_info\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}]": "utter_goodbye",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}, {\"prev_action\": {\"action_name\": \"utter_goodbye\"}, \"user\": {\"intent\": \"goodbye\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"define_word_sentence\"}}]": "utter_finding_definition",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"define_word_sentence\"}}, {\"prev_action\": {\"action_name\": \"utter_finding_definition\"}, \"user\": {\"intent\": \"define_word_sentence\"}}]": "action_show_definition",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"define_word_sentence\"}}, {\"prev_action\": {\"action_name\": \"utter_finding_definition\"}, \"user\": {\"intent\": \"define_word_sentence\"}}, {\"prev_action\": {\"action_name\": \"action_show_definition\"}, \"user\": {\"intent\": \"define_word_sentence\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"find_time_zone_for_location\"}}]": "utter_finding_time_zone",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"find_time_zone_for_location\"}}, {\"prev_action\": {\"action_name\": \"utter_finding_time_zone\"}, \"user\": {\"intent\": \"find_time_zone_for_location\"}}]": "action_show_time_zone",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"find_time_zone_for_location\"}}, {\"prev_action\": {\"action_name\": \"utter_finding_time_zone\"}, \"user\": {\"intent\": \"find_time_zone_for_location\"}}, {\"prev_action\": {\"action_name\": \"action_show_time_zone\"}, \"user\": {\"intent\": \"find_time_zone_for_location\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "predicting default action with intent back",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"challenge_bot\"}}, {\"prev_action\": {\"action_name\": \"utter_challenge_bot\"}, \"user\": {\"intent\": \"challenge_bot\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"challenge_bot\"}}]",
+      "predicting default action with intent restart",
+      "predicting default action with intent session_start",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"meaning_of_life\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"meaning_of_life\"}}, {\"prev_action\": {\"action_name\": \"utter_meaning_of_life\"}, \"user\": {\"intent\": \"meaning_of_life\"}}]"
+    ]
+  }
+}

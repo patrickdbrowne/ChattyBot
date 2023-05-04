@@ -1,0 +1,96 @@
+version: "3.0"
+
+stories:
+
+- story: goodbye path
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: ask for time zone long
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: find_time_zone
+  - action: utter_ask_location
+  - intent: city_info
+  - action: utter_finding_time_zone
+  - action: action_show_time_zone
+  - intent: thanks
+  - action: utter_you_are_welcome
+  - action: utter_goodbye
+
+- story: ask for time zone short
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: find_time_zone_for_location
+  - action: utter_finding_time_zone
+  - action: action_show_time_zone
+  - intent: thanks
+  - action: utter_you_are_welcome
+  - action: utter_goodbye
+
+- story: ask for the weather for location
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: find_weather_for_location
+  - action: utter_finding_weather
+  - action: action_show_weather
+  - intent: thanks
+  - action: utter_you_are_welcome
+
+- story: ask for weather default
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: find_weather
+  - action: utter_finding_weather
+  - action: action_show_weather
+  - intent: thanks
+  - action: utter_you_are_welcome
+
+- story: defining a word
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: define_word_sentence
+  - action: utter_finding_definition
+  - action: action_show_definition
+  - intent: thanks
+  - action: utter_you_are_welcome
+
+- story: giving information about a country
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: find_country_info
+  - action: utter_finding_country_info
+  - action: action_find_country_info
+  - intent: thanks
+  - action: utter_you_are_welcome
+
+- story: giving info on COVID
+  steps: 
+  - intent: greet
+  - action: utter_greet
+  - intent: find_covid_data
+  - action: utter_find_covid_data
+  - action: action_find_covid_data
+  - intent: thanks
+  - action: utter_you_are_welcome
+
+- story: telling a joke
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: find_joke
+  - action: action_find_joke
+
+- story: Full Trivia sequence - find question, stores answer, respond
+  steps:
+  - intent: find_trivia
+  - action: action_find_trivia
+  - intent: user_trivia_response
+  - action: action_check_trivia

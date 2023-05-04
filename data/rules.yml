@@ -1,0 +1,80 @@
+version: "3.0"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Return weather anytime user asks for it
+  steps:
+  - intent: find_weather_for_location
+  - action: utter_finding_weather
+  - action: action_show_weather
+
+- rule: Return time zone anytime user asks for it
+  steps:
+  - intent: find_time_zone_for_location
+  - action: utter_finding_time_zone
+  - action: action_show_time_zone
+
+- rule: a city given indicates the time zone
+  steps:
+  - intent: city_info
+  - action: utter_finding_time_zone
+  - action: action_show_time_zone
+
+- rule: Return definition of word when asked
+  steps:
+  - intent: define_word_sentence
+  - action: utter_finding_definition
+  - action: action_show_definition
+
+- rule: Find weather default
+  steps:
+  - intent: find_weather
+  - action: utter_finding_weather
+  - action: action_show_weather
+
+- rule: find country information
+  steps:
+  - intent: find_country_info
+  - action: utter_finding_country_info
+  - action: action_find_country_info
+
+- rule: If the user asks if ChattyBot is a bot
+  steps:
+  - intent: challenge_bot
+  - action: utter_challenge_bot
+
+- rule: meaning of life quote "42"
+  steps:
+  - intent: meaning_of_life
+  - action: utter_meaning_of_life
+
+- rule: COVID data
+  steps:
+  - intent: find_covid_data
+  - action: utter_find_covid_data
+  - action: action_find_covid_data
+
+- rule: find joke
+  steps:
+  - intent: find_joke
+  - action: action_find_joke
+
+- rule: Trivia sequence - finds question
+  steps:
+  - intent: find_trivia
+  - action: action_find_trivia
+
+- rule: Music metadata
+  steps:
+  - intent: music_artist_link
+  - action: action_music_metadata
+
+- rule: playing music
+  steps:
+  - intent: search_music
+  - action: action_search_song

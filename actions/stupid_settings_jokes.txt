@@ -1,0 +1,2 @@
+['Programming,Miscellaneous,Pun,Spooky,Christmas']
+['nsfw,religious,political,racist,sexist,explicit']
