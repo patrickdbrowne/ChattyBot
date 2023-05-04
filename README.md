@@ -3,16 +3,17 @@
 ## What is ChattyBot
 I have a project on an Artificially Intelligent Chatbot based on a package called Rasa. This program uses Natural Language Understanding to interpret the user’s message and APIs to retrieve live data for responses. The user can type phrases into the GUI interface to get:
 
--the time in most cities;
--the weather in most cities;
--general information on any country;
--a definition and example for most words;
--the latest COVID data in most countries;
--a joke;
--a trivia question;
--music metadata when the link to an artist is pasted; and
--a song played on Spotify in the browser.
--The conversation displayed can be exported, or cleared, and the program can read out its responses to the user. There are 6 categories and 6 blacklist options the user -can choose to be included in the Chatbot’s jokes in the “Settings” tab. The program may speak its responses to the user when the “voice” button is toggled on. Voice -settings can also be altered in settings, including the rate, volume and gender of the text-to-speech module.
+- the time in most cities;<br>
+- the weather in most cities;<br>
+- general information on any country;<br>
+- a definition and example for most words;<br>
+- the latest COVID data in most countries;<br>
+- a joke;<br>
+- a trivia question;<br>
+- music metadata when the link to an artist is pasted; and<br>
+- a song played on Spotify in the browser.<br></br>
+
+The conversation displayed can be exported, or cleared, and the program can read out its responses to the user. There are 6 categories and 6 blacklist options the user can choose to be included in the Chatbot’s jokes in the “Settings” tab. The program may speak its responses to the user when the “voice” button is toggled on. Voice settings can also be altered in settings, including the rate, volume and gender of the text-to-speech module.
 
 ## How to use ChattyBot
 1. Install the necessary requirements in a virtual environment - must be run in Python Version 3.8.
