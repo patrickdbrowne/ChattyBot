@@ -20,7 +20,7 @@ The conversation displayed can be exported, or cleared, and the program can read
 2. If you are running the program for the first time, type "rasa train" into the terminal and wait until the Rasa model is saved to another file.
 3. Run main.py in the terminal.
 4. Interact with the GUI once the terminal outputs: "Rasa server is up and running."
-5. Follow https://stackoverflow.com/questions/39632667/how-do-i-kill-the-process-currently-using-a-port-on-localhost-in-windows to kill port 5055 if there is an issue with re-running the programming.
+5. Follow https://stackoverflow.com/questions/39632667/how-do-i-kill-the-process-currently-using-a-port-on-localhost-in-windows to kill port 5055 if there is an issue with re-running the program.
 
 ## Future improvements
 The program is complete but I'd still like to add some new features, including:
